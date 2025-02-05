@@ -1,7 +1,9 @@
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
+    --dark-blue-opacity: rgba(13, 25, 43, 0.15);
     --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-shadow: rgba(9, 17, 31, 0.15);
     --dark-blue-card: hsl(216, 50%, 16%);
     --dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
@@ -26,7 +28,9 @@ body {
 .mobile-container {
     width: 375px;
     max-width: 375px;
-    padding: 2rem;
+    padding: 1rem 2rem 3rem;
+    border-radius: 15px;
+    background-color: var(--dark-blue-opacity);
 }
 
 .container {
@@ -35,6 +39,8 @@ body {
     padding: 1.3rem;
     border-radius: 13px;
     background-color: var(--dark-blue-line);
+    box-shadow: -10px 20px 1px var(--dark-blue-shadow),
+                10px 20px 1px var(--dark-blue-shadow);
 }
 .img-equilibrum {
     width: 100%;
